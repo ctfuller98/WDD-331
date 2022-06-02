@@ -19,3 +19,54 @@ body {
   margin: 0;
   padding: 1em;
 }
+
+p {
+padding-left: 1em;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  background-color: $background-color;
+}
+
+h1 {
+font-family: $fonts-headline;
+font-size: 65px;
+padding-left: .5em;
+grid-column: 1;
+grid-row: 1;
+}
+
+h2 {
+  font-family: $fonts-headline;
+  font-size: 35px;
+  padding-left: .5em;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.summary {
+  font-family: $fonts-body;
+  padding-left: 1em;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+h3 {
+  font-family: $fonts-headline;
+  font-size: 30px;
+  padding-left: .5em;
+}
+
+.preamble {
+grid-column: 2;
+grid-row: 2/3;
+}
+
+.explanation {
+  grid-column: 3;
+  grid-row: 2;
+}
+
