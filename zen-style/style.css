@@ -1,3 +1,71 @@
+h2,
+h3,
+h4 {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+}
+
+h1 {
+  color: #fb6107;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #fbb02d;
+  font-weight: 900;
+  /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+.preamble h3, .main h3 {
+  display: flex;
+  padding: 15px;
+  background-color: #fb6107;
+  width: auto;
+  border-radius: 2px;
+}
+
+p {
+  font-style: normal;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  color: blue;
+  border-bottom: 1px solid #daede2;
+  color: #fff;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -64,6 +132,12 @@ h3 {
 .explanation {
   grid-column: 3;
   grid-row: 2;
+}
+
+#zen-supporting div {
+  background-color: #daede2;
+  border: 1px solid black;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
