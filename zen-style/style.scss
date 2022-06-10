@@ -45,7 +45,7 @@
   justify-content: center;
   align-content: center;
   background: #fff;
-  width: 80%;
+  width: 100%;
   ul {
     list-style-type: none;
     background: $sidebar;
@@ -123,9 +123,8 @@ padding-left: 1em;
 }
 
 .page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
   background-color: $background-color;
 }
 
@@ -183,7 +182,6 @@ grid-row: 2/3;
 
 div#zen-requirements.requirements{
   background-image: url("imagen/sunset.svg");
-  height: 490px; 
 }
 .sidebar {
   grid-column: 1/3;
