@@ -1,7 +1,5 @@
 @import "variables"; //this puts all the variables in the global namespace.
-// @use 'atoms';
-//@use 'molecules';
-//@use 'organisms' as o;
+@import "atoms";
 @mixin link {
     display: inline-block;
     margin:20px 0;
@@ -168,6 +166,24 @@ grid-row: 2/3;
 .explanation {
   grid-column: 3;
   grid-row: 2;
+  }
+
+#zen-supporting div{
+  background-color: $background-color;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+
+.participation  {
+  background-color: $accent1;//the color can change//
+  width: auto;
+  border-radius: 2px;
+}
+
+div#zen-requirements.requirements{
+  background-image: url("imagen/sunset.svg");
+  height: 490px; 
 }
 .sidebar {
   grid-column: 1/3;

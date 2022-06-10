@@ -51,7 +51,7 @@ h2 {
   line-height: 1em;
 }
 h3 { 
-  color: #FFFFFF;//the color can change//
+  color: $text-dark;//the color can change//
   font-size: 2.25em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
@@ -70,7 +70,7 @@ h4 {
   display: flex;
   padding: 15px;
   background-color: $accent1;//the color can change//
-  width: auto;
+ width: auto;
   border-radius: 2px;
 }
 p {
