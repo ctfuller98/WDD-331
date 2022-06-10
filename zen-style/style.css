@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  color: #FFFFFF;
+  color: #333;
   font-size: 2.25em;
   font-weight: 200;
   /* Thin */
@@ -138,6 +138,21 @@ h3 {
   background-color: #daede2;
   border: 1px solid black;
   padding: 1rem;
+}
+
+.participation {
+  background-color: #fb6107;
+  width: auto;
+  border-radius: 2px;
+}
+
+div#zen-requirements.requirements {
+  background-image: url("imagen/sunset.svg");
+  height: 490px;
+}
+
+#zen-supporting div {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
