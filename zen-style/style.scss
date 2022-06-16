@@ -200,3 +200,7 @@ div#zen-requirements.requirements{
 .zen-resources {
   @include link-boxes();
 }
+
+div #zen-summary .summary {
+  background-image: url("imagen/tree.svg");
+}
