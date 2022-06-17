@@ -1,5 +1,3 @@
-@use 'variables' as *;
-
 // mixins to take care of repeated patterns.
 @mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
   font-family: $font;
