@@ -37,14 +37,15 @@ h4 {
   margin: 0;
 }
 h1 {
-  color: $accent1;
+  color:#0cb29c;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
 }
+
 h2 {
-  color: $accent2;
+  color: $text-dark;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
