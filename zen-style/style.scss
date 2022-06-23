@@ -1,5 +1,5 @@
-@import "variables"; //this puts all the variables in the global namespace.
-@import "atoms";
+@use "variables" as *; //this puts all the variables in the global namespace.
+@use "atoms";
 @mixin link {
     display: inline-block;
     margin:20px 0;
@@ -151,12 +151,16 @@ h2 {
   grid-column: 1;
   grid-row: 3;
 }
+.preamble h3:first-child , .requirements h3 {
+background-color: transparent;
+}
 
 h3 {
   font-family: $fonts-headline;
   font-size: 30px;
   padding-left: .5em;
 }
+
 
 .preamble {
 grid-column: 2;
@@ -201,3 +205,7 @@ div#zen-requirements.requirements{
 .zen-resources {
   @include link-boxes();
 }
+.page-wrapper{
+  background-image:url("imagen/Palm-Trees.jpg");
+}
+
