@@ -204,7 +204,10 @@ div#zen-requirements.requirements{
 .zen-resources {
   @include link-boxes();
 }
-.page-wrapper{
+.page-wrapper {
   background-image:url("imagen/Palm-Trees.jpg");
 }
 
+h1 {
+  background-color: white;
+}

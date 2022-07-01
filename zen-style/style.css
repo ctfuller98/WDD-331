@@ -79,7 +79,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 85%;
   color: #333;
-  background-color: #5c8001;
+  background-color: #0cb29c;
   margin: 0;
   padding: 1em;
 }
@@ -420,6 +420,10 @@ div#zen-requirements.requirements {
 
 .page-wrapper {
   background-image: url("imagen/Palm-Trees.jpg");
+}
+
+h1 {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
