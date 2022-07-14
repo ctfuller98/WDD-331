@@ -1,5 +1,5 @@
-@import "variables"; //this puts all the variables in the global namespace.
 @use "atoms";
+@import "variables"; //this puts all the variables in the global namespace.
 @mixin link ($color) {
     display: inline-block;
     margin:20px 0;
@@ -269,8 +269,9 @@ h3:hover {
 a {
   @include link(black);
   font-size: medium;
-  color: darkblue;
+  color: $text-light;
 }
 .design-name {
   @include link(black)
 }
+
