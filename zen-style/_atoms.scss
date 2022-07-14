@@ -1,4 +1,4 @@
-@use "variables" as *;
+@import "variables";
 
 // mixins to take care of repeated patterns.
 @mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
@@ -70,7 +70,6 @@ h4 {
 .preamble h3, .main h3 {
   display: flex;
   padding: 15px;
-  background-color: $accent1;//the color can change//
  width: auto;
   border-radius: 2px;
 }
