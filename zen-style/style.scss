@@ -1,6 +1,6 @@
 @use "atoms";
 @import "variables"; //this puts all the variables in the global namespace.
-@mixin link {
+@mixin link ($color) {
     display: inline-block;
     margin:20px 0;
     position: relative;
@@ -11,7 +11,7 @@
     border:none;
     transition:0.2s ease-in-out;
     &:hover {
-      color:#bf1363;
+      color:$color;
       &:before {
         transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
         transform-origin:left;
@@ -47,16 +47,18 @@
   align-content: center;
   background: #fff;
   width: 100%;
+  background: linear-gradient(342deg, rgba(251,176,45,0.5710155155812324) 0%, rgba(30,23,218,0.5) 66%);
   ul {
     list-style-type: none;
-    background: linear-gradient(342deg, rgba(251,176,45,0.5710155155812324) 0%, rgba(30,23,218,0.8623320421918768) 66%);
+    
     padding:30px 80px 40px 90px;
     li {
       text-align:left;
       position:relative;
+      color: white;
       &:hover{
         &:after{
-          box-shadow:0 0 0 5px #333, 0 0 0 7px #e0ff00;
+          box-shadow:0 0 0 5px rgb(251,176,45), 0 0 0 7px lightblue;
         }
       }
       &:after{
@@ -65,12 +67,12 @@
         width:7.5px;
         height:7.5px;
         background: rgb(251,176,45);
-        background: linear-gradient(342deg, rgba(251,176,45,0.5710155155812324) 0%, rgba(30,23,218,0.8623320421918768) 66%);
+       
         border-radius:100%;
         left:-25px;
         top:50%;
         transform:translate(0,-50%);
-        box-shadow:0 0 0 0 #1155cb, 0 0 0 0 #e0ff00;
+        box-shadow:0 0 0 0 green, 0 0 0 0 lightblue;
         transition:0.4s ease-in-out;
       }
       &:nth-of-type(2) {
@@ -97,12 +99,8 @@
       }
     }
   }
-  a {
-    @include link();
-  }
 }
 @mixin animate-headings{
-  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #0cb29c 0%,
@@ -119,7 +117,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
-  display: inline-block;
   
 
 @keyframes textclip {
@@ -157,6 +154,7 @@ padding-left: 1em;
 
 h1 {
 font-family: $fonts-headline;
+text-transform: uppercase;
 font-size: 65px;
 padding-left: .5em;
 grid-column: 1;
@@ -269,7 +267,11 @@ h3:hover {
   @include animate-headings();
 }
 a {
-  @include link();
+  @include link(black);
   font-size: medium;
   color: $text-light;
 }
+.design-name {
+  @include link(black)
+}
+
