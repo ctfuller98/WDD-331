@@ -49,7 +49,7 @@
   align-content: center;
   background: #fff;
   width: 100%;
-  background: linear-gradient(342deg, rgba(251,176,45,0.5710155155812324) 0%, rgba(30,23,218,0.5) 66%);
+  background: linear-gradient(342deg, rgba(251,176,45,0.55) 0%, rgba(23, 153, 218, 0.5) 66%);
   ul {
     list-style-type: none;
     
@@ -130,7 +130,9 @@
 * {
   box-sizing: border-box;
 }
-
+footer {
+  margin-left:15px;
+}
 body {
   font-family: $fonts-body;
   font-size: 85%;
@@ -202,7 +204,7 @@ grid-row: 2/3;
 
 #zen-supporting div{
   background-color: $background-color;
-  border: 1px solid black;
+  border-top: 3px solid white;
   padding: 1rem;
 }
 
@@ -215,6 +217,10 @@ grid-row: 2/3;
 
 div#zen-requirements.requirements{
   background-image: url("imagen/sunset.svg");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right bottom;
+
   
 }
 .sidebar {
@@ -247,7 +253,7 @@ header{
 }
 .intro {
   background: rgb(12,178,156);
-background: linear-gradient(180deg, rgba(12,178,156,0.7979062718837535) 0%, rgba(255,255,255,0.8371219581582633) 54%);
+background: linear-gradient(180deg, rgba(12,178,156,0.8) 0%, rgba(255,255,255,0.8371219581582633) 54%);
 
 }
 h1 {
@@ -267,7 +273,7 @@ h3:hover {
   @include animate-headings();
 }
 a {
-  @include link(black);
+  @include link(#fb6107);
   font-size: medium;
   color: $text-light;
 }

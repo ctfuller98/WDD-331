@@ -40,8 +40,12 @@ h1 {
   color:#0cb29c;
   display: inline-block;
   font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+  margin:0 auto;
+  @media (min-width: 576px) {  
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+ }
+  
 }
 
 h2 {
